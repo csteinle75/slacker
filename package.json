@@ -1,0 +1,22 @@
+{
+  "name": "slacker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csteinle75/slacker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csteinle75/slacker/issues"
+  },
+  "homepage": "https://github.com/csteinle75/slacker#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
