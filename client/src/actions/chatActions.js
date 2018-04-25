@@ -1,15 +1,17 @@
 import io from 'socket.io-client'
 import store from 'services/store'
 
+
 const socket = io.connect('http://localhost:3001')
 
 socket.on('message', data => {
 	addMessage(data)
 })
 
-export function sendMessage(message){
+export function sendMessage(msgObj){
 	socket.emit('message', {
-		message: message
+		message: msgObj.message,
+		timestamp: msgObj.timestamp
 	})
 }
 

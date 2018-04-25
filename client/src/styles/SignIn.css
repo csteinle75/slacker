@@ -1,0 +1,55 @@
+.signinWrapper{
+	text-align: center;
+	border: 2px solid #ccc;
+	display: flex;
+	justify-content: center;
+}
+
+.formsContainer{
+	border: 2px solid #888;
+	border-radius: 5px;
+	background-color: #ccc;
+	margin: 20px 0;
+	padding: 20px 20px 0;
+}
+
+.inputTitles{
+	margin: 0 0 5px;
+	color: #fff;
+}
+
+.formWrapper {
+	padding: 0 0 20px 0;
+}
+.formWrapper input {
+	display: block;
+	outline: none;
+	width: 100%;
+	padding: 3px;
+	margin: 2px;
+	border: 1px solid #ccc;
+	font-weight: lighter;
+}
+
+.formWrapper input:first-child{
+	border-radius: 4px 4px 0 0;
+}
+
+.formWrapper .lastInput{
+	border-radius: 0 0 4px 4px;
+}
+
+.formWrapper button {
+	outline: none;
+	margin: 5px 0 0;
+	border: 2px solid #888;
+	border-radius: 2px;
+}
+
+.formWrapper button:hover{
+	background-color: #eee
+}
+
+.formWrapper button:active{
+	background-color: #dedede
+}

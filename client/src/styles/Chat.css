@@ -1,0 +1,35 @@
+.chatWrapper{
+	text-align: center;	
+	border: 2px solid #ccc;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	min-width: 400px;
+}
+
+.chatMessages {
+	border: 2px dashed rgba(255,0,255,.5);
+	overflow-y: scroll;
+	
+}
+
+.chatInputForm{
+	text-align: center;
+	position: relative;
+}
+
+.chatInput{
+	outline: none;
+	border: 2px solid #aaa;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.chatSubmit{
+	position: relative;
+	left: -2px;
+	outline: none;
+	border: 2px solid #aaa;
+	border-radius: 3px;
+	padding: 5px;
+}

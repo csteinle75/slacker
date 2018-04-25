@@ -1,11 +1,19 @@
 const express = require('express')
 const http = require('http')
 const socketio = require('socket.io')
+const bodyParser = require('body-parser')
+const config = require('config')
+const jwt = require('express-jwt')
 
 const app = express()
 const server = http.Server(app)
 const io = socketio(server)
 
+//routes
+const authRoutes = require('./routes/authRoutes')
+const protectedRoutes = require('./routes/protectedRoutes')
+
+app.use(bodyParser.json())
 
 server.listen(3001)
 
@@ -15,6 +23,8 @@ io.on('connection', (socket) =>{
 	})
 })
 
+app.use('/api', authRoutes)
+app.use('/api', jwt({secret: config.get('jwt-secret')}), protectedRoutes)
 
 // var app = require('express')();
 // var server = require('http').Server(app);

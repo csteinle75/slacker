@@ -1,0 +1,43 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Helvetica', sans-serif;
+	background-color: #fafafa
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.appHead {
+	text-align: center;
+	background-color: #c66;
+	color: white;
+	height: 36px;
+}
+
+.appHead h1 {
+	margin: 0;
+	font-style: italic;
+}
+
+.appContainer{
+
+}
+
+.leftSidebar{
+	border: 2px solid rgba(255,0,255,.5);
+	position: absolute;
+	top: 36px;
+	left: 0;
+	bottom: 0;
+	width: 200px;
+}
+
+.pageDisplay{
+	border: 2px solid rgba(255,0,255,.5);
+	position: absolute;
+	top: 36px;
+	left: 200px;
+	bottom: 0;
+	right: 0;
+}
